@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>自己紹介ページ一覧</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-muted">
+    <header class="text-center">
+        <div class="container">
+            <h2 class="pt-5 pb-2">2024年度新入社員 自己紹介ページ一覧</h2>
+        </div>
+    </header>
+    <main>
+        <article>
+            <section class="container">
+                <div class="row">
+                    <div class="col-4 m-auto">
+                        <table class="table table-striped table-hover text-center">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>#</th>
+                                    <th>氏名</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <script type="text/javascript">
+        const members = [['粟沢　和也', './805_awazawa-k/index.html'],
+                        ['飯田　遼平', './806_iida-r/index.html'],
+                        ['大塚　久鈴', './807_ootsuka-k/index.html'],
+                        ['小見野　夏光', './808_omino-n/index.html'],
+                        ['越磨　宏貴', './809_koshima-h/index.html'],
+                        ['小林　泰子', './810_kobayashi-y/index.html'],
+                        ['小堀　悠泰', './811_kohori-y/index.html'],
+                        ['坂本　明日', './812_sakamoto-h/index.html'],
+                        ['澤田　玲', './813_sawada-r/index.html'],
+                        ['関口　さくら', './814_sekiguchi-s/index.html'],
+                        ['高峰　竜馬', './815_takamine-r/index.html'],
+                        ['田中　紀匠', './816_tanaka-n/index.html'],
+                        ['田中　大翔', './817_tanaka-h/index.html'],
+                        ['土田　優志', './818_tsuchida-y/index.html'],
+                        ['中原　颯汰', './819_nakahara-s/index.html'],
+                        ['西山　史織', './820_nishiyama-s/index.html'],
+                        ['二村　悠斗', './821_nimura-y/index.html'],
+                        ['丹羽　雄希', './822_niwa-y/index.html'],
+                        ['橋本　舜矢', './823_hashimoto-s/index.html'],
+                        ['埴原　蒼大', './824_hanihara-s/index.html'],
+                        ['原田　陸', './825_harada-r/index.html'],
+                        ['松井　佑', './826_matsui-y/index.html'],
+                        ['松浦　早希', './827_matsuura-s/index.html'],
+                        ['松下　翔太', './828_matsushita-s/index.html'],
+                        ['三澤　睦生', './829_misawa-m/index.html'],
+                        ['水品　明', './830_mizushina-a/index.html'],
+                        ['和田　啓', './831_wada-satoshi/index.html'], 
+                    ];
+    
+        members.forEach((member, index) => {
+            $("tbody").append(`<tr>
+                                <td>${index + 1}</td>
+                                <td><a href="${member[1]}" target="_blank">${member[0]}</a></td>
+                               </tr>`);
+        });
+    </script>
+</body>
+</html>
